@@ -21,4 +21,8 @@ else:
     print("Hallo", wer, "!")
 
 lieblingszahl = input("Was ist deine Lieblingszahl? ")
-print("Super, ich mag die Zahl", lieblingszahl, " auch!")
+print("Super, ich mag die Zahl", lieblingszahl, "auch!")
+print("Aber die groessere Zahl", int(lieblingszahl) +10, "mag ich noch mehr! ")
+
+runden = input("Wieviele Runden sollen wir spielen? ")
+runden = int(runden)
