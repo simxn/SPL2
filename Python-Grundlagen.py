@@ -44,9 +44,9 @@ for runde in range(1, runden +1):
     print("Runden", runde, "von", runden, ": Sieger: ", sieger, "   gewuerfelt wurde: ", zufallszahl)
 if(gewinn > gewinnC):
     print("Der Gesamtgewinner ist", wer, ".")
-else:
+elif(gewinn < gewinnC):
     print("Der Gesamtgewinner ist der Computer.")
-elif(gewinn == gewinnC):
+elif(gewinn==gewinnC):
     print("Es gibt keinen Gewinner! Unentschieden.")
 print(wer, "hat", gewinn,"mal gewonnen und der Computer gewann", gewinnC, "mal.")
 print("Game over...")
