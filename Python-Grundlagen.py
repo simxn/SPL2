@@ -37,10 +37,10 @@ for runde in range(1, runden +1):
     zufallszahl = random.randint(1,6)
     if(zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
         sieger = wer
-        gewinn += 1    
+        gewinn += 1 
     else:
         sieger = "Computer"
-        gewinnC += 1    
+        gewinnC += 1 
     print("Runden", runde, "von", runden, ": Sieger: ", sieger, "   gewuerfelt wurde: ", zufallszahl)
 if(gewinn > gewinnC):
     print("Der Gesamtgewinner ist", wer, ".")
