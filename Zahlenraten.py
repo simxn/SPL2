@@ -12,13 +12,15 @@ Czahl = int(Czahl)
 versuche = 0
 
 while(erraten == False):
-    rechnung = Czahl/2
+    rechnung = int(Czahl/2)
     versuche += 1
     print(rechnung)
     if(rechnung < zahl):
-        Czahl = Czahl + Czahl/2
+        Czahl = Czahl + Czahl/4 * 3
+    if(rechnung < zahl):
+        Czahl = Czahl - Czahl/4 * 3
     if(rechnung == zahl):
-        erraten == True
+        erraten == True 
     if(versuche == 10): 
         break
 print("Der Computer benötigte", versuche, "Versuche um die Zahl", zahl, "zu erraten.")
