@@ -34,19 +34,19 @@ gewinn = 0
 gewinnC = 0
 for runde in range(1, runden +1):
     # Zufallszahl erzeugen
-    counter = 0
-    counterC = 0
     zufallszahl = random.randint(1,6)
     if(zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
         sieger = wer
-        gewinn = counter + 1    
+        gewinn += 1    
     else:
         sieger = "Computer"
-        gewinnC = counterC + 1    
-    print("Runden", runde, "von", runden, ": Sieger: ", sieger, "gewuerfelt wurde: ", zufallszahl)
+        gewinnC += 1    
+    print("Runden", runde, "von", runden, ": Sieger: ", sieger, "   gewuerfelt wurde: ", zufallszahl)
 if(gewinn > gewinnC):
-    print("Der Gesamtgewinner ist", wer)
+    print("Der Gesamtgewinner ist", wer, ".")
 else:
-    print("Der Gesamtgewinner ist Computer")
+    print("Der Gesamtgewinner ist der Computer.")
+elif(gewinn == gewinnC):
+    print("Es gibt keinen Gewinner! Unentschieden.")
 print(wer, "hat", gewinn,"mal gewonnen und der Computer gewann", gewinnC, "mal.")
 print("Game over...")
